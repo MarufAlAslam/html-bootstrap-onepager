@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "josefinsans-bold";
+    src: url('../fonts/JosefinSans-Bold.ttf');
+}
+
+*{
+    font-family: "josefinsans-bold";
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.btn{
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+
+/* desktop stylings */
+section{
+    min-height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* section1 */
+
+.section-1{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../img/desktop/1.jpg");
+}
+
+.title{
+    font-size: 70px;
+}
+
+
+
+
+/* we are */
+.we-are{
+    background-color: #1D2234;
+}
+
+.big{
+    font-size: 100px;
+    line-height: 1;
+}
+.fs-25{
+    font-size: 25px;
+}
+
+/* section 2 */
+.section-2{
+    background-image: url("../img/desktop/2.jpg");
+}
+
+
+/* section 3 */
+.section-3{
+    background-image: url("../img/desktop/3.jpg");
+}
+
+
+/* section 4 */
+.section-4{
+    background-image: url("../img/desktop/4.jpg");
+    background-position: bottom;
+}
+
+/* section 5 */
+.section-5{
+    background-image: url("../img/desktop/5.jpg");
+    background-position: bottom;
+}
+
+/* section 6 */
+.section-6{
+    background-image: url("../img/desktop/6.jpg");
+}
+
+/* section 7*/
+.section-7{
+    background-image: unset;
+    background-position: -50% center;
+    position: relative;
+}
+.section-7::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/desktop/left.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+.section-7::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/desktop/right.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+.container.position-relative {
+    z-index: 10;
+}
+
+
+/* section 8 */
+.section-8{
+    background-image: url("../img/desktop/8.jpg");
+}
