@@ -113,3 +113,13 @@ section{
 .contact{
     background-image: url("../img/desktop/9.jpg");
 }
+
+
+/* mailto */
+.py-100{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.mail{
+    font-size: 70px;
+}
