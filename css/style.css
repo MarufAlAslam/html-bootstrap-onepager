@@ -35,7 +35,7 @@ section{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 
@@ -65,71 +65,51 @@ section{
     font-size: 25px;
 }
 
-/* section 2 */
-.section-2{
-    background-image: url("../img/desktop/2.jpg");
-}
-
-
-/* section 3 */
-.section-3{
-    background-image: url("../img/desktop/3.jpg");
-}
-
-
-/* section 4 */
-.section-4{
-    background-image: url("../img/desktop/4.jpg");
-    background-position: bottom;
-}
-
-/* section 5 */
-.section-5{
-    background-image: url("../img/desktop/5.jpg");
-    background-position: bottom;
-}
-
-/* section 6 */
-.section-6{
-    background-image: url("../img/desktop/6.jpg");
-}
-
 /* section 7*/
-.section-7{
-    background-image: unset;
-    background-position: -50% center;
-    position: relative;
-}
-.section-7::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../img/desktop/left.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
-}
-.section-7::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url("../img/desktop/right.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
-}
-.container.position-relative {
+
+.container.position-absolute {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 /* section 8 */
 .section-8{
     background-image: url("../img/desktop/8.jpg");
+}
+
+/* section 9 */
+.section-9{
+    background-color: #FF00FF;
+    padding-top: 45vh;
+}
+.name{
+    font-size: 40px;
+}
+
+
+/* we do */
+.we-do{
+    background-color: #FFFFD8;
+}
+
+/* we like */
+.we-like{
+    background-color: #1D2234;
+}
+
+/* contact */
+.contact{
+    background-image: url("../img/desktop/9.jpg");
 }
